@@ -1,0 +1,94 @@
+.column-header-div {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the start of the container */
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: black;
+  margin-left: 0.6rem;
+}
+
+.column-header-row {
+  display: flex; /* Display children in a row */
+  align-items: center; /* Vertically center-align items */
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.3rem;
+  width: 250px;
+  /* font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; */
+  justify-content: space-between; /* Distribute items along the container */
+  overflow: hidden; /* Hide overflowing content */
+  white-space: nowrap; /* Prevent title from wrapping */
+  text-overflow: ellipsis; /* Display ellipsis for overflowing title */
+}
+
+.column-header-div .column-header-row > h3 {
+  padding: 0.1rem 0.2rem;
+  color: var(--font-color2);
+  border-radius: 0.3rem;
+  flex-grow: 1;
+  font-size: 1.4rem;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-weight: 750;
+  margin-right: 0.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.column-header-row button {
+  padding: 0.1rem 0.1rem;
+  border-radius: 0.3rem;
+  outline: none;
+  border: none;
+  width: 25px;
+  font-size: 1rem;
+  margin-left: 0.2rem;
+  background-color: transparent;
+  color: var(--font-color-green);
+  cursor: pointer;
+}
+
+.column-header-row button:nth-child(2):hover {
+  color: red;
+ 
+}
+
+.column-header-row button:nth-child(3):hover {
+    color: green;
+}
+
+.column-header-row .trash-icon, .column-header-row .plus-icon {
+    color: var(--font-color2);
+}
+
+.column-header-row .trash-icon:hover {
+    color: red;
+    transition: 0.3s ease-in-out;
+}
+
+.column-header-row .plus-icon:hover {
+    color: green;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* .column-header-div button {
+    padding: 0.1rem 0.2rem;
+    background-color: #FDECC8;
+} */
+
+/* .column-card button {
+   
+    padding: 0.1rem 0.2rem;
+    border-radius: 0.3rem;
+    outline: none;
+    border: none;
+    width: 40px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: inherit;
+    background-color: #FDECC8;
+    cursor: pointer;
+} */

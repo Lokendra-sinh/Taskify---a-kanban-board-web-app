@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;400&family=Roboto&display=swap");
+
+@import url("https://db.onlinewebfonts.com/c/d602bf6498a65d9595ca30c04eadda32?family=Tanseek+Modern+Pro+Arabic+Book");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Montserrat&family=Poppins:wght@300;400&family=Roboto&display=swap");
+
+:root {
+  /* --background-color: #f7f8fa; */
+  --font-color-pink: #df4086;
+  --background-color-pink: #efb4d0;
+  --font-color-blue: #3880f6;
+  --background-color-blue: #b4d4f6;
+  --font-color-green: #3dba8e;
+  --font-color-green-shade1: #3dba8e;
+  --font-color-green-shade2: #3dba8e;
+  --font-color-green-shade3: #3dba8e;
+  --background-color-green: #b4f6e1;
+  --font-color-yellow: #f6c54f;
+  --background-color-yellow: #f6eab4;
+  --font-color-orange: #f68a4f;
+  --background-color-orange: #f6c4b4;
+  --font-color-purple-shade0: #3c096c;
+  --font-color-purple-shade1: #5a189a;
+  --font-color-purple-shade2: #7b2cbf;
+  --font-color-purple-shade3: #9d4edd;
+
+  --background-color-purple-shade1: #eab4f6;
+  --background-color-purple-shade2: #d4b4f6;
+
+  --font-color-red: #f64f4f;
+  --background-color-red: #f6b4b4;
+  --font-color-grey: #a0a0a0;
+  --background-color-grey: #e0e0e0;
+
+  --text-color-grey: #7d7c83;
+
+  --background-color: #252830;
+  --background-color-darkblue: #243239;
+  --background-color-darkblue2: #1e2a32;
+  --background-color-lightblue: #f0f4f8;
+  --background-color-lightblue2: #e5e5e5;
+  --background-color-grey1: #4f5e66;
+  --background-color-grey2: #a0a0a0;
+
+  --container-color: #1D1E22;
+
+  --font-color1: #6C6C6C;
+  --font-color2: #A0A0A0;
+  --font-color3: #E0E0E0;
+  --font-color4: #FFFFFF;
+ --hover-color: #343a40;
+  --font-stack: Inter -apple-system BlinkMacSystemFont "Segoe UI" Roboto Oxygen Ubuntu
+    Cantarell "Fira Sans" "Droid Sans" "Helvetica Neue" sans-serif;
+
+  --border-property: 0.3px solid #343a40;
+
+  }
+
+
+:root.dark {
+  --background-color: #000000;
+  --background-color-darkblue: #243239;
+  --background-color-darkblue2: #1e2a32;
+  --background-color-lightblue: #f0f4f8;
+
+  --hover-color: #343a40;
+
+  --font-color2: #A0A0A0;
+  --font-color3: #E0E0E0;
+  --font-color4: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: "Identification";
+  src: url("../Fonts/Identification.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* In your CSS file, e.g., src/styles/font.css */
+
+@font-face {
+  font-family: "Shaded3";
+  src: url("../Fonts/Shaded3.ttf") format("truetype");
+  /* You can also include other font formats here, like woff2, woff, etc. */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Transeek";
+  src: url("../Fonts/Transeek.ttf") format("truetype");
+  /* You can also include other font formats here, like woff2, woff, etc. */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bicyclette-Black";
+  src: url("../Fonts/Bicyclette-Black.otf") format("opentype");
+  /* You can also include other font formats here, like woff2, woff, etc. */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bicyclette-Bold";
+  src: url("../Fonts/Bicyclette-Bold.otf") format("opentype");
+  /* You can also include other font formats here, like woff2, woff, etc. */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bicyclette-Regular";
+  src: url("../Fonts/Bicyclette-Regular.otf") format("opentype");
+  /* You can also include other font formats here, like woff2, woff, etc. */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bicyclette-Thin";
+  src: url("../Fonts/Bicyclette-Thin.otf") format("opentype");
+  /* You can also include other font formats here, like woff2, woff, etc. */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bicyclette-Ultra";
+  src: url("../Fonts/Bicyclette-Ultra.otf") format("opentype");
+  /* You can also include other font formats here, like woff2, woff, etc. */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bicyclette-Light";
+  src: url("../Fonts/Bicyclette-Light.otf") format("opentype");
+  /* You can also include other font formats here, like woff2, woff, etc. */
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,111 @@
+.login {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    color: white;
+
+    span {
+        font-size: 4rem;
+        font-weight: 800;
+        font-family: 'Inter', sans-serif;
+        letter-spacing: 1px;
+        color: var(--font-color-pink);
+        margin-bottom: 1rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+        background-color: var(--container-color);
+        color: var(--font-color2);
+        // border: var(--border-property);
+        min-width: 340px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+
+        h1 {
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        input {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            border: var(--border-property);
+            width: 100%;
+
+            &:active, &:focus {
+                outline: none;
+                border: 0.3px solid var(--font-color2);
+            }
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 5px;
+            border: var(--border-property);
+            width: 100%;
+            // background-color: lightgrey;
+            cursor: pointer;
+        }
+
+        span {
+            margin: 0.5rem auto;
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            color: var(--font-color-pink);
+        }
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 1rem 0;
+
+            button {
+                outline: none;
+                border: var(--border-property);
+                padding: 0.2rem 0.1rem;
+                width: 100px;
+                
+                &:hover {
+                    background-color: var(--hover-color);
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        
+
+            span {
+            color: var(--font-color-pink);
+            font-size: 0.8rem;
+            font-family: 'Inter', sans-serif;
+        }
+    }
+    }
+    
+}
+
+// @media screen and (max-width: 350px) {
+//     .login form {
+//         padding: 10px;
+//     }
+    
+//     .login form h1 {
+//         font-size: 1.5rem;
+//     }
+
+//     .login form input,
+//     .login form button {
+//         padding: 8px;
+//         font-size: 0.9rem;
+//     }
+// }

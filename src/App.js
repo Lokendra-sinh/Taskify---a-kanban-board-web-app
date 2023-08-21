@@ -1,24 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import { Routes, Route, useNavigate, Navigate } from "react-router-dom";
+import "./App.css";
+import Sidebar from "./Components/Sidebar/Sidebar";
+import Board from "./Components/Board/Board";
+import Header from "./Components/Header/Header";
+import { useBoardsContext } from "./BoardsContext";
+import { useUserContext } from "./userContext";
+import Login from "./Components/Login/Login";
+import Register from "./Components/Register/Register";
+import { app, db } from "./firebaseConfig";
+import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
 
 function App() {
+  const { state, dispatch } = useUserContext();
+  console.log("user logged in value from app component: ", state.userLoggedIn);
+
+  const RequireAuth = ({ children }) => {
+    return state.userLoggedIn ? children : <Navigate to="/" />;
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <body>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route
+          path="/board/*"
+          element={
+            <div className="main-container">
+              <div>
+                <Header />
+              </div>
+              <div className="main-content">
+                <Sidebar />
+                <article className="boards-section">
+                  <Routes>
+                    <Route
+                      path=":boardId"
+                      element={
+                        <RequireAuth>
+                          <Board />
+                        </RequireAuth>
+                      }
+                    />
+                  </Routes>
+                </article>
+              </div>
+            </div>
+          }
+        />
+      </Routes>
+    </body>
   );
 }
 

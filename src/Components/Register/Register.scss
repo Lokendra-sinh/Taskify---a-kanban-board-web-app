@@ -1,0 +1,95 @@
+.register {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--container-color);
+        padding: 20px;
+        width: 350px;
+        color: white;
+        // border: var(--border-property);
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+
+        h1 {
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        label {
+            color: var(--font-color2);
+        }
+
+        input {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            border: var(--border-property);
+            width: 100%;
+
+            &:active, &:focus {
+                outline: none;
+                border: 0.3px solid var(--font-color2);
+            }
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 5px;
+            border: var(--border-property);
+            width: 100%;
+            cursor: pointer;
+        }
+
+    }
+
+    div {
+        margin-top: 3rem;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+        // gap: 10px;
+
+        &:hover {
+            cursor: pointer;
+            color: var(--hover-color);
+        }
+
+        // .material-icons.md-light {
+        //     color: white;
+        //   }
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.8rem;
+            outline: none;
+            border: none;
+            // border: var(--border-property);
+            background-color: transparent;
+            color: var(--hover-color);
+            cursor: pointer;
+            padding: 0.4rem;
+            border-radius: 0.3rem;
+            font-size: 1rem;
+            font-weight: 500px;
+            font-family: 'Inter', sans-serif;
+
+            &:hover {
+                color: white;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+          
+    }
+    
+}

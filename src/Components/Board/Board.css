@@ -1,0 +1,122 @@
+.board-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    /* background: linear-gradient(to bottom, #433D37, #2C2C2E, #222429); */
+    background-color: var(--background-color);
+    color: var(--font-color4);
+    width: 100%;
+    
+}
+
+.board-container h2 {
+  font-family: 'Inter', -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 3rem 0 3rem 1.4rem;
+}
+
+
+.column-container {
+    display: flex;
+    flex-wrap: nowrap; /* Allow horizontal overflow */
+    gap: 20px;
+    margin-left: 1rem;
+    overflow-x: auto;
+    padding-bottom: 1rem; /* Add padding to the bottom */
+    /* Newly added styles for row-based columns */
+    flex-direction: row;
+    align-items: flex-start;
+  }
+.column-container .add-column button{
+    width: 100%;
+    height: 100%;
+    color: var(--font-color2);
+    background-color: transparent;
+    border: 0.3px solid #343a40;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 2.6rem 0;
+    font-family: 'Seoge UI', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.1);
+}
+
+.column-container .add-column button:hover {
+  border-color: var(--font-color1);
+  transition: 0.3s ease-in-out;
+}
+
+
+.columns {
+    min-width: 270px;
+    min-height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 0 0 auto;
+  }
+
+  
+  .modal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-header {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .modal-form label {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .modal-form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .addNewColumn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .addNewColumn:hover {
+    background-color: #0056b3;
+  }
